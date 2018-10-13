@@ -12,7 +12,11 @@ function frameIt() {
 }
 
 function pressIt() {
-
+  $('input').on('keydown', function(keypressed){
+    if(keypressed.key === 'G'){
+      alert('You entered the letter G')
+    }
+  })
 }
 
 function submitIt() {
